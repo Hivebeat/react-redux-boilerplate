@@ -1,24 +1,19 @@
-// import React, { Component } from 'react';
-// import { bindActionCreators } from 'redux';
-// import { Connector } from 'react-redux';
-// import Main from '../components/Main';
-// import * as SomeappActions from '../actions/SomeappActions';
+import React, { Component } from 'react';
+import { bindActionCreators } from 'redux';
+import { connect } from 'react-redux';
+import Main from '../components/Main';
 
-// export default class SomeApp extends Component {
-//   render() {
-//     return (
-//       <Connector select={state => ({ someapp: state.someapp })}>
-//         {this.renderChild}
-//       </Connector>
-//     );
-//   }
 
-//   renderChild({ someapp, dispatch }) {
-//     const actions = bindActionCreators(SomeappActions, dispatch);
-//     return (
-//       <div>
-//         <Main someapp={someapp} actions={actions} />
-//       </div>
-//     );
-//   }
-// }
+@connect(state => ({
+	messages: state.Intl.get('messages')
+}))
+export default class SomeApp extends Component {
+  const {messages} = this.props;
+  render() {
+    return (
+      <div>
+        <Main messages={messages} />
+      </div>
+    );
+  }
+}
