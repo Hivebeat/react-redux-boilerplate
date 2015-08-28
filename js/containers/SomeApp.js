@@ -8,8 +8,8 @@ import Main from '../components/Main';
 	messages: state.Intl.get('messages')
 }))
 export default class SomeApp extends Component {
-  const {messages} = this.props;
   render() {
+		const { messages, dispatch } = this.props;
     return (
       <div>
         <Main messages={messages} />
