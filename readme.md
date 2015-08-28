@@ -1,0 +1,1 @@
+Just a boilerplate for redux that we use at hivebeat for our main webapp, when adding new sub webapp, that bind into the main web server scripts. Includes a solution for internationalization using Yahoo's format.js

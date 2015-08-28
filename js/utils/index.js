@@ -1,0 +1,1 @@
+export {default as getIntlMessage} from './getIntlMessage';
