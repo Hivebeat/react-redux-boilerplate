@@ -1,11 +1,8 @@
 import React, { Component } from 'react';
-import ImportEventApp from './ImportEventApp';
+import SomeApp from './SomeApp';
 import create from '../redux';
 import { Provider } from 'react-redux';
 import * as reducers from '../reducers';
-
-const reducer = combineReducers(reducers);
-const store = createStore(reducer);
 
 export default class App {
   render() {
@@ -17,7 +14,7 @@ export default class App {
               }
       return (
             <Provider store={store}>
-              {() => <CommunityApp />}
+              {() => <SomeApp />}
             </Provider>
           );
     }
