@@ -3,8 +3,6 @@ Just a boilerplate for redux that we use at hivebeat for our main webapp, when a
 ##Usage
 - Add css and js dirs to new dir in src
   - Remember to change names and paths
-- Add conroller and layout/template to app dir (or add it to existing controller)
+- Add conroller and template to app dir (or add it to existing controller)
   - Remember to change names and paths
 - Add task to tasks dir
-- import task to main gulpfile
-- add tasks to build task
