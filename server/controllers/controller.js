@@ -8,7 +8,8 @@ module.exports = function(app) {
       const store = theApp.create(theApp.reducers);
       const state = store.getState();
       res.render('template', {
-            layout: 'layout',
+            layout: 'redux',
+            title: 'a title',
             GLOBAL_CONFIG: JSON.stringify({
               LOCALE: app.locals.locale,
               API_HOST: app.locals.API_HOST,
